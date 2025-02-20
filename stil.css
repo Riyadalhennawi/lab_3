@@ -13,12 +13,12 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     background-color: #f4f4f4;
 }
 
-main {
+/* main {
     width: 100%;
     max-width: 800px;
     background: white;
@@ -26,7 +26,8 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 20px;
-}
+} */
+
 
 .jumbotron {
     text-align: center;
@@ -34,8 +35,8 @@ main {
     padding: 1.5rem;
     border-radius: 0.3rem;
     margin-bottom: 1rem;
+    margin-top: 3%;
 }
-
 
 .col {
     display: flex;
@@ -72,11 +73,13 @@ aside {
 @media (max-width: 414px) {
     body {
         text-align: center;
+        align-items: center;
     }
     
     main {
         width: 90%;
     }
+
 
     .col {
         text-align: left;
@@ -87,6 +90,14 @@ aside {
         height: 100px;
     }
 
+    #div-in-form {
+        width: 100%;
+        max-width: 800px;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
 
     #newGame {
         color: white;
@@ -99,6 +110,16 @@ aside {
 
 /* Media query för enhet mellan 415px och 1181px */
 @media (min-width: 415px) and (max-width: 1180px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .jumbotron {
+        margin-top: 0%;
+    }
+
     aside {
         display: block;
         width: 30%;
@@ -106,14 +127,19 @@ aside {
     }
     aside img {
         width: 100%;
+        height: auto;
+        margin-left: 0;
     }
     main {
         width: 50%;
+        margin-bottom: auto;
     }
     td {
         width: 125px;
         height: 125px;
     }
+
+    
 }
 
 /* Media query för enhet större än 1181px */
@@ -126,6 +152,11 @@ aside {
     main {
         width: 70%;
     }
+
+    .jumbotron {
+        margin-top: 0%;
+    }
+
     aside {
         display: block;
         width: 300px;
@@ -133,7 +164,7 @@ aside {
     }
     aside img {
         width: 100%;
-        margin-bottom: 192%;
+        height: auto;
     }
     td {
         width: 200px;
