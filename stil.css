@@ -1,0 +1,142 @@
+/* Grundläggande styling */
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.d-none {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background: #dedede;
+    padding: 1.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;  /* Gör att label hamnar ovanför input */
+    margin-bottom: 1em; /* Ger lite mellanrum mellan fälten */
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+/* Spelplan */
+#game-area table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    width: 125px;
+    height: 125px;
+    border: 1px solid darkgray;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Aside (bilden till höger) */
+aside {
+    display: none;
+}
+
+/* Media query för enhet mindre än 415px */
+@media (max-width: 414px) {
+    body {
+        text-align: center;
+    }
+    
+    main {
+        width: 90%;
+    }
+
+    .col {
+        text-align: left;
+    }
+
+    td {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    #newGame {
+        color: white;
+        background-color: rgb(6, 189, 250);
+        border-radius: 0.5rem;
+        padding: 4px;
+        margin-left: 63%;
+    }
+}
+
+/* Media query för enhet mellan 415px och 1181px */
+@media (min-width: 415px) and (max-width: 1180px) {
+    aside {
+        display: block;
+        width: 30%;
+        text-align: center;
+    }
+    aside img {
+        width: 100%;
+    }
+    main {
+        width: 50%;
+    }
+    td {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+/* Media query för enhet större än 1181px */
+@media (min-width: 1181px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main {
+        width: 70%;
+    }
+    aside {
+        display: block;
+        width: 300px;
+        margin-left: 20px;
+    }
+    aside img {
+        width: 100%;
+        margin-bottom: 192%;
+    }
+    td {
+        width: 200px;
+        height: 200px;
+    }
+}
