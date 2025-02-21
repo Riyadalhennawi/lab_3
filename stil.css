@@ -105,6 +105,7 @@ aside {
         border-radius: 0.5rem;
         padding: 4px;
         margin-left: 63%;
+        text-decoration: none;
     }
 }
 
@@ -118,6 +119,14 @@ aside {
 
     .jumbotron {
         margin-top: 0%;
+    }
+
+    #newGame {
+        color: white;
+        background-color: rgb(6, 189, 250);
+        border-radius: 0.3rem;
+        padding: 7px;
+        text-decoration: none;
     }
 
     aside {
@@ -157,6 +166,14 @@ aside {
         margin-top: 0%;
     }
 
+    #newGame {
+        color: white;
+        background-color: rgb(6, 189, 250);
+        border-radius: 0.3rem;
+        padding: 7px;
+        text-decoration: none;
+    }
+
     aside {
         display: block;
         width: 300px;
@@ -164,7 +181,7 @@ aside {
     }
     aside img {
         width: 100%;
-        height: auto;
+        height: 370px;
     }
     td {
         width: 200px;
